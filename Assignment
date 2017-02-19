@@ -1,0 +1,59 @@
+
+public class Inheritance {
+	
+	public static void main (String s[])
+	{
+		
+		B b =new B();
+		b.show();
+		b.show1();
+		C c =new C();
+		c.show2();
+		
+		
+	}
+
+}
+
+class A
+{
+	int a=30 ;
+	String abc ="Hello";
+	A()
+	{
+		
+	}
+	void show()
+	{
+		System.out.println(" a"+a + " abc"+abc);
+	}
+}
+
+class B extends A
+{
+	int b=35 ;
+	String val ="Thahir";
+	B()
+	{
+		
+	}
+	void show1()
+	{
+		System.out.println("b"+b + " value"+val);
+	}
+
+}
+class C extends B
+{
+	int c=38 ;
+	String val1 ="Sana";
+	C()
+	{
+		
+	}
+	void show2()
+	{
+		System.out.println("c"+c + " value"+val1);
+	}
+
+}
